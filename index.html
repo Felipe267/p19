@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+
+        body{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("historia.webp");
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 2);
+        }
+
+        body::before {
+            content: "";
+            background-image: url("historia.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.5); /* Efeito de escurecimento */
+            z-index: -1;
+        }
+
+        .capa{
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 100px auto;
+            transition: 0.3s;
+            border: 3px solid white;
+        }
+
+        .capa:hover{
+            transform: scale(1.50);
+        }
+
+        .titulo{
+            margin: 50px auto;
+            text-align: center;
+            color: white;
+            font-size: 100px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+        .sub{
+            font-size: 30px;
+            margin: 20px auto;
+            color: white;
+            text-align: center;
+        }
+
+        p{
+            color: #666;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .conteudo{
+         line-height: 20px;   
+        }
+
+        .t{
+            text-align: center;
+            color: #550707;
+            padding-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        .pp{
+            width: 300px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <a href="#">
+                <img class="capa" src="historia2.jpg" alt="">
+            </a>
+            
+            
+            <div class="titulo">
+                Gavrilo Princip
+            </div>
+            <div class="sub">
+                O tiro saiu pela culatra
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="conteudo">
+                        <h2>Gavrilo Princip</h2>
+                        <p>
+                            <span class="t">
+                                <b>
+                                    Contexto Histórico:
+                                </b></span>
+
+                            <p>A Áustria-Hungria estava em conflito com a Sérvia devido às tensões políticas e étnicas na região dos Bálcãs.</p>
+                            <p>O assassinato do arquiduque Franz Ferdinand e sua esposa Sofia em Sarajevo em 28 de junho de 1914 foi o evento imediato que desencadeou a crise.</p>
+                            <img class="pp" src="https://www.historiaemcortes.com.br/wp-content/uploads/2023/04/arquiduque-854x480-1.webp" alt=""> <br>
+                            <span class="t"><b>Membros da Jovem Bósnia:</b></span>
+                            
+                            <p>Gavrilo Princip era membro de um grupo nacionalista sérvio conhecido como a "Jovem Bósnia", que buscava a independência da Sérvia do domínio austro-húngaro.</p>
+                            <p>Princip e seus colegas nacionalistas acreditavam que o assassinato do arquiduque ajudaria a alcançar esse objetivo.</p>
+                            <img class="pp" src="https://viajepordois.files.wordpress.com/2014/06/sarajevo_trial.jpg" alt=""> <br>
+                            <span class="t"><b>Crise Diplomática:</b></span> 
+                            
+                            <p>O assassinato de Franz Ferdinand levou a uma rápida escalada de tensões entre a Áustria-Hungria e a Sérvia.</p>
+                            <p>Vários países europeus estavam em alianças militares, e a crise diplomática se espalhou rapidamente, resultando no início da Primeira Guerra Mundial em 28 de julho de 1914.</p>
+
+                            <span class="t"><b>Papel Complexo:</b></span>
+                            
+                            <p>Embora Gavrilo Princip tenha sido o autor direto do assassinato, é importante destacar que ele era um dos muitos nacionalistas sérvios e não agiu sozinho.</p>
+                            <p>A Primeira Guerra Mundial foi o resultado de várias tensões políticas, econômicas e militares que se acumularam ao longo do tempo, não apenas do ato de Princip.</p>
+                            
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nBMlCvbiar1lDHcebVd5bghf0D-Zus1wog&usqp=CAU" alt="" class="pp"> <br>
+                            
+                            <span class="t"><b>Referências:</b></span>
+                            
+                            <p>"The Assassination of Archduke Franz Ferdinand" - The History Channel</p> 
+                            <p>"Gavrilo Princip" - Encyclopaedia Britannica</p>
+                            <p>"The Origins of World War I" - National World War I Museum and Memorial</p>
+
+                            <p>https://www.youtube.com/watch?v=BzI0AdoWNn4&ab_channel=GeneralMvk</p>
+                            
+                    </div>
+                </div>
+            </div>            
+            
+        </article>
+    </main>
+
+    <script>
+        
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+    
+        document.querySelector(".capa").addEventListener("click", function() {
+            modal.style.display = "block";
+        });
+    
+        span.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+    
+        window.addEventListener("click", function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>    
+
+</body>
+</html>
